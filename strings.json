@@ -1,0 +1,36 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "GeoSphere Austria Warnings",
+        "description": "Set up weather warnings for your location using the GeoSphere Austria WarnAPI. Coordinates default to your Home Assistant home location.",
+        "data": {
+          "latitude": "Latitude",
+          "longitude": "Longitude",
+          "location_name": "Location name",
+          "scan_interval": "Update interval (minutes, 10–1440)"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Unable to connect to GeoSphere WarnAPI. Check your network connection.",
+      "unknown": "Unexpected error. Check Home Assistant logs."
+    },
+    "abort": {
+      "already_configured": "This location is already configured."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "GeoSphere Warnings – Options",
+        "data": {
+          "latitude": "Latitude",
+          "longitude": "Longitude",
+          "location_name": "Location name",
+          "scan_interval": "Update interval (minutes)"
+        }
+      }
+    }
+  }
+}
